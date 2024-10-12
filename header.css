@@ -2,13 +2,12 @@
     background-color: white;
     color: black;
     padding-left: 0px;
-    padding-right: 15px;
+    padding-right: 0px;
 
     display: flex;
     align-items: center;
     flex-direction: row;
-    justify-content: space-between;
-
+    justify-content: space-between-;
     position: fixed;
     top: 0;
     left: 0;
@@ -37,8 +36,9 @@
     border-radius: 2px;
     cursor: pointer;
     text-decoration: none;
-    border: 1px solid rgba(0, 0, 0, 0);
+    border: 1px solid rgba(0, 0, 0, 0.8);
     margin-left: 0;
+    color: black;
 
 }
 
@@ -62,9 +62,9 @@
 
 .middle-section {
     flex: 1;
-    margin-left: 70px;
-    margin-right: 35px;
-    max-width: 500px;
+    margin-left: 0px;
+    margin-right: 0px;
+    /* max-width: 500px; */
     display: flex;
     /*    align-items: center;*/
 }
@@ -148,14 +148,14 @@
 }
 
 .right-section {
-    width: 180px;
+    width: 120px;
     flex-shrink: 0;
     display: flex;
 
-    margin-right: 20px;
+    margin-right: 2px;
 
     align-items: center;
-    justify-content: end;
+    justify-content: right;
 
 }
 
@@ -183,6 +183,7 @@
 
 .cart-icon {
     width: 50px;
+    /* align-items: start; */
 }
 
 .upload-icon {
@@ -193,37 +194,9 @@
     height: 24px;
 }
 
-.notifications-icon {
-    height: 24px;
-}
-
-.notifications-icon-container {
-    position: relative;
-}
-
-.notifications-count {
-    position: absolute;
-    top: -2px;
-    right: -4px;
-    background-color: rgb(200, 0, 0);
-    color: white;
-    font-size: 11px;
-    padding: 2px 5px;
-    border-radius: 10px;
-}
-
 .current-user-picture {
     height: 32px;
     border-radius: 16px;
-}
-
-.upload-icon-container,
-.youtube-apps-icon-container,
-.notifications-icon-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
 }
 
 .cart-text {
@@ -234,11 +207,22 @@
 
 .cart-quantity {
     color: black;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 700;
     position: absolute;
-    top: 4px;
-    left: 22px;
+    top: 12px;
+    left: 14px;
     width: 26px;
     text-align: center;
+    padding: 0px;
+    border-radius: 16px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.header-title {
+    font-family: Roboto, Arial;
+    font-weight: 500;
+    font-size: 20px;
+    justify-content: center;
+    width: 100%;
 }
