@@ -2,6 +2,15 @@
   width: 100%;
 }
 
+.video-preview {
+  padding: 0;
+}
+
+.product-name {
+  height: 50px;
+  margin-bottom: 5px;
+}
+
 .video-title {
   margin-top: 0;
   font-size: 14px;
