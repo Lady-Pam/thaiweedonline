@@ -42,3 +42,6 @@ footer .contact-links a img {
 footer .contact-links a:hover {
   text-decoration: underline;
 }
+iframe {
+  width: 100%;
+}
