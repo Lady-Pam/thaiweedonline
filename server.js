@@ -16,6 +16,11 @@ const storage = multer.diskStorage({
 });
 
 const upload = multer({ storage: storage });
+// Trasa do formularza
+app.get('/', (req, res) => {
+    res.sendFile(__dirname + '/index.html'); // Upewnij się, że masz plik index.html
+  });
+
 
 // Endpoint do obsługi przesyłania formularza
 app.post('/upload', upload.single('file'), (req, res) => {
@@ -29,12 +34,9 @@ app.post('/upload', upload.single('file'), (req, res) => {
     // Możesz tutaj dodać logikę do przetwarzania danych
     console.log(`First name: ${firstName}, Last name: ${lastName}, Address: ${address}, File: ${file.filename}`);
 
-    res.send('Data has been sent successfully!');
+    res.send('Data has been sent successfully!: ' + req.file.filename);
 });
 
-app.get('/', (req, res) => {
-    res.send('Witaj na stronie głównej!');
-  });
 
 // Uruchomienie serwera
 app.listen(PORT, () => {
