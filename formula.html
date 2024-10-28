@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formula.css">
+    <link rel="stylesheet" href="styles/shared/header.css">
+    <link rel="stylesheet" href="styles/shared/footer.css">
+    <title>Payment and details page</title>
+</head>
+<body>
+    <header class="header">
+        <div class="left-section">
+            <a href="index.html" class="header-link">
+                <img class="thaiweed-logo" src="images/icons/thaiweed-logo2-300x169.png" alt="logo Lady Pam Shop">
+                <img class="thaiweed-mobile-logo" src="images/icons/thaiweed-logo4-100x56.png">
+            </a>
+        </div>
+
+        <div class="middle-section">
+            <a href="index.html" class="header-link">
+                <p class="header-title">thaiweedonline.shop</p>
+            </a>
+        </div>
+
+        <div class="right-section">
+            <a class="cart-link header-link" href="checkout.html">
+                <img class="cart-icon" src="images/icons/cart.svg">
+                <div class="cart-quantity js-cart-quantity">0</div>
+                <div class="cart-text">Cart</div>
+            </a>
+        </div>
+    </header>
+
+    
+
+
+
+    <h4>Send us details for sending by post office</h4>
+    <form id="dataForm" action="http://localhost:3000/upload" method="POST" enctype="multipart/form-data">
+        <label for="firstName">First name:</label>
+        <input type="text" id="firstName" name="firstName" required><br><br>
+
+        <label for="lastName">Last name:</label>
+        <input type="text" id="lastName" name="lastName" required><br><br>
+
+        <label for="address">Delivery address:</label>
+        <input type="text" id="address" name="address" required><br><br>
+
+        <label for="file">File with proof of payment:</label>
+        <input type="file" id="file" name="file" accept="image/*" required><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+
+    <footer>
+        <div class="contact-links">
+          <a href="https://t.me/Martin_Poro" target="_blank">
+            <img src="images/icons/telegram.png" alt="Telegram">TELEGRAM
+          </a>
+          <a href="https://line.me/ti/p/Martin82pl" target="_blank">
+            <img src="images/icons/line_png2.png" alt="LINE">LINE
+          </a>
+          <a href="mailto:ladypam.cannabis@gmail.com">
+            <img src="images/icons/mail100x100png.png" alt="email">EMAIL
+          </a>
+        </div>
+      </footer>  
+
+
+
+</body>
+</html>
