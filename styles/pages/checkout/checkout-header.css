@@ -1,7 +1,7 @@
 .checkout-header {
-  height: 60px;
-  padding-left: 30px;
-  padding-right: 30px;
+  height: 45px;
+  padding-left: 0;
+  padding-right: 5px;
   background-color: white;
 
   display: flex;
@@ -23,11 +23,12 @@
 }
 
 .checkout-header-left-section {
-  width: 150px;
+  width: 82px;
 }
 
 .thaiweed-logo {
-  width: 100px;
+  width: 80px;
+  height: 45px;
   /* margin-top: 12px; */
 }
 
@@ -50,8 +51,8 @@
 
   .thaiweed-mobile-logo {
     display: inline-block;
-    height: 35px;
-    margin-top: 5px;
+    height: 45px;
+    margin-top: 0px;
   }
 }
 
@@ -60,7 +61,7 @@
   flex-shrink: 0;
   text-align: center;
 
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 500;
 
   display: flex;
@@ -69,19 +70,19 @@
 
 .return-to-home-link {
   color: rgb(0, 113, 133);
-  font-size: 23px;
+  font-size: 20px;
   text-decoration: none;
   cursor: pointer;
 }
 
 @media (max-width: 1000px) {
   .checkout-header-middle-section {
-    font-size: 20px;
+    font-size: 15px;
     margin-right: 60px;
   }
 
   .return-to-home-link {
-    font-size: 18px;
+    font-size: 15px;
   }
 }
 
