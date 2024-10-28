@@ -17,6 +17,10 @@ const storage = multer.diskStorage({
 
 const upload = multer({ storage: storage });
 // Trasa do formularza
+app.get('/', (req, res) => {
+    res.sendFile(__dirname + '/index.html'); // Upewnij się, że masz plik index.html
+  });
+// Trasa do formularza
 app.get('/formula', (req, res) => {
     res.sendFile(__dirname + '/formula.html'); // Upewnij się, że masz plik formularz.html
   });
