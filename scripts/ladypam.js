@@ -27,25 +27,27 @@ products.forEach((product) => {
           <img class="profile-picture" src="images/icons/logo200x200png.png" alt="">
         </div>
         <div class="video-info">
-          <!-- <input type="checkbox"> -->
-          <p class="video-title">
+          
           <div class="product-name limit-text-to-2-lines">
             ${product.name}
-          </div>          
-          </p>
+          </div>
+          <p class="product-type">indoor hybrid</p>
+          
           <p class="video-author">Lady Pam, Chonburi, Phan Thong</p>
-          <p class="video-stats">
+          <p class="add-date">Added 16 October 2024</p>
+
+          
           <div class="product-price">
             THB ${formatCurrency(product.priceCents)} 
           </div>
-          </p>
+          
         </div>
       </div>
       
 
       <div class="product-spacer"></div>
 
-      <div class="added-to-cart">
+      <div class="added-to-cart js-added-to-cart">
         <img src="images/icons/checkmark.png">
         Added
       </div>
@@ -88,10 +90,25 @@ function updateCartQuantity() {
     document.querySelector('.js-cart-quantity').innerHTML = cartQuantity;
 }
 
+
+// function showAdded () {
+//   document.querySelectorAll('.js-add-to-cart').forEach((button) => {
+//     button.addEventListener('click', () => {
+        
+//         let myImage = document.querySelector('.js-added-to-cart');
+
+//         myImage.style.opacity= 1;
+//     });
+// });
+// }
+
 document.querySelectorAll('.js-add-to-cart').forEach((button) => {
     button.addEventListener('click', () => {
+        
         const productId = button.dataset.productId;
 
+        // showAdded();
+        
         addToCart(productId);
         updateCartQuantity();
     });

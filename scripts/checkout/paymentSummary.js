@@ -66,7 +66,7 @@ export function renderPaymentSummary() {
       </div>
     </div>
 
-    <a href="contact.html">
+    <a href="formula.html">
       <button class="place-order-button button-primary">Place your order</button>
     </a>
   `;
