@@ -27,7 +27,7 @@ app.get('/formula', (req, res) => {
 // Trasa do formularza
 
 // Endpoint do obsługi przesyłania formularza
-app.post('/upload', upload.single('file'), (req, res) => {
+app.post('/uploads', upload.single('file'), (req, res) => {
     const { firstName, lastName, address } = req.body;
     const file = req.file;
 
