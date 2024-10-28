@@ -32,6 +32,10 @@ app.post('/upload', upload.single('file'), (req, res) => {
     res.send('Data has been sent successfully!');
 });
 
+app.get('/', (req, res) => {
+    res.send('Witaj na stronie głównej!');
+  });
+
 // Uruchomienie serwera
 app.listen(PORT, () => {
     console.log(`Server works on http://localhost:${PORT}`);
