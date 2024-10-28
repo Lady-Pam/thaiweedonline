@@ -11,25 +11,56 @@ export function getProduct(productId) {
 }
 
 export const products = [
-    {
-        id: "e43638ce-6aa0-4b85-b27f-e1d07eb678c6",
-        image: "images/products/BlueDream1_600.jpg",
-        name: "Blue Dream indoor hybrid ",
-        rating: {
-            stars: 4.5,
-            count: 87
-        },
-        priceCents: 15000,
-        keywords: [
-      "socks",
-      "sports",
-      "apparel"
+
+  {
+    id: "54e0eccd-8f36-462b-b68a-8182611d9add",
+    image: "images/products/RoyalGorilla1_600.jpg",
+    name: "Royal Gorilla",
+    rating: {
+      stars: 5,
+      count: 2197
+    },
+    priceCents: 15000,
+    keywords: [
+    "toaster",
+    "kitchen",
+    "appliances"
+    ]
+  },
+  {
+    id: "3ebe75dc-64d2-4137-8860-1f5a963e534b",
+    image: "images/products/SuperBoof1_600.jpg",
+    name: "Super Boof",
+    rating: {
+      stars: 4,
+      count: 37
+    },
+    priceCents: 15000,
+    keywords: [
+    "plates",
+    "kitchen",
+    "dining"
+    ]
+  },
+   {
+    id: "e43638ce-6aa0-4b85-b27f-e1d07eb678c6",
+    image: "images/products/BlueDream1_600.jpg",
+    name: "Blue Dream",
+    rating: {
+      stars: 4.5,
+      count: 87
+    },
+    priceCents: 15000,
+    keywords: [
+    "socks",
+    "sports",
+    "apparel"
     ]
   },
     {
         id: "15b6fc6f-327a-4ec4-896f-486349e85a3d",
         image: "images/products/JellyBreath1_600.jpg",
-        name: "Jelly Breath indoor hybrid",
+        name: "Jelly Breath",
         rating: {
             stars: 4,
             count: 127
@@ -43,12 +74,12 @@ export const products = [
     {
         id: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e",
         image: "images/products/OgKush1_600.jpg",
-        name: "OG Kush indoor hybrid",
+        name: "OG Kush",
         rating: {
             stars: 4.5,
             count: 56
         },
-        priceCents: 20000,
+        priceCents: 15000,
         keywords: [
       "tshirts",
       "apparel",
@@ -57,45 +88,16 @@ export const products = [
         type: "clothing",
         sizeChartLink: "images/clothing-size-chart.png"
   },
-    {
-        id: "54e0eccd-8f36-462b-b68a-8182611d9add",
-        image: "images/products/RoyalGorilla1_600.jpg",
-        name: "Royal Gorilla indoor hybrid",
-        rating: {
-            stars: 5,
-            count: 2197
-        },
-        priceCents: 18000,
-        keywords: [
-      "toaster",
-      "kitchen",
-      "appliances"
-    ]
-  },
-    {
-        id: "3ebe75dc-64d2-4137-8860-1f5a963e534b",
-        image: "images/products/SuperBoof1_600.jpg",
-        name: "Super Boof indoor hybrid",
-        rating: {
-            stars: 4,
-            count: 37
-        },
-        priceCents: 20000,
-        keywords: [
-      "plates",
-      "kitchen",
-      "dining"
-    ]
-  },
+    
     {
         id: "8c9c52b5-5a19-4bcb-a5d1-158a74287c53",
         image: "images/products/TropicanaCherry1_600.jpg",
-        name: "Tropicana Cherry indoor hybrid",
+        name: "Tropicana Cherry",
         rating: {
             stars: 4.5,
             count: 175
         },
-        priceCents: 25000,
+        priceCents: 15000,
         keywords: [
       "kitchen",
       "cookware"
