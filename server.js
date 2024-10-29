@@ -23,7 +23,7 @@ app.get('/', (req, res) => {
 });
 
 // Trasa do formularza
-app.get('/formula', (req, res) => {
+app.get('/', (req, res) => {
     res.sendFile(__dirname + '/formula.html'); // Upewnij się, że masz plik formula.html
 });
 
