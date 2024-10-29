@@ -5,6 +5,12 @@ const path = require('path');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
+// Middleware do parsowania danych formularza
+app.use(express.urlencoded({ extended: true }));
+
+// Middleware do obsługi statycznych plików (CSS, JS)
+app.use(express.static(path.join(__dirname))); // Umożliwia dostęp do plików w katalogu głównym
+
 // Konfiguracja multer do przechowywania plików
 const storage = multer.diskStorage({
     destination: (req, file, cb) => {
@@ -17,30 +23,21 @@ const storage = multer.diskStorage({
 
 const upload = multer({ storage: storage });
 
-// Trasa do strony głównej
-app.get('/', (req, res) => {
-    res.sendFile(__dirname + '/index.html'); // Upewnij się, że masz plik index.html
-});
-
 // Trasa do formularza
-app.get('/', (req, res) => {
-    res.sendFile(__dirname + '/formula.html'); // Upewnij się, że masz plik formula.html
+app.get('/formula', (req, res) => {
+    res.sendFile(path.join(__dirname, 'formula.html')); // Wysłać plik formula.html
 });
 
 // Endpoint do obsługi przesyłania formularza
 app.post('/upload', upload.single('file'), (req, res) => {
-    const { firstName, lastName, address } = req.body; // Odczytanie danych z formularza
-    const file = req.file; // Odczytanie przesłanego pliku
+    const { firstName, lastName, address } = req.body;
+    const file = req.file;
 
-    // Sprawdzenie, czy plik został przesłany
     if (!file) {
-        return res.status(400).send('Plik nie został przesłany.'); // Zwrócenie błędu, jeśli plik nie został przesłany
+        return res.status(400).send('Plik nie został przesłany.');
     }
 
-    // Logika do przetwarzania danych
-    console.log(`Imię: ${firstName}, Nazwisko: ${lastName}, Adres: ${address}, Plik: ${file.filename}`);
-
-    // Odpowiedź po pomyślnym przesłaniu
+    console.log(`Name: ${firstName}, Surname: ${lastName}, Address: ${address}, Plik: ${file.filename}`);
     res.send('Dane zostały przesłane pomyślnie!: ' + req.file.filename);
 });
 

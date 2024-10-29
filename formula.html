@@ -32,26 +32,15 @@
         </div>
     </header>
 
-    
-
-
-
-    <h4>Send us details for sending by post office</h4>
-    <form id="dataForm" action="/upload" method="POST" enctype="multipart/form-data">
-        <label for="firstName">First name:</label>
-        <input type="text" id="firstName" name="firstName" required><br><br>
-
-        <label for="lastName">Last name:</label>
-        <input type="text" id="lastName" name="lastName" required><br><br>
-
-        <label for="address">Delivery address:</label>
-        <input type="text" id="address" name="address" required><br><br>
-
-        <label for="file">File with proof of payment:</label>
-        <input type="file" id="file" name="file" accept="image/*" required><br><br>
-
-        <button type="submit">Submit</button>
+    <h1>Send us an details for delivery by post office.</h1>
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+        <input type="text" name="firstName" placeholder="Name" required>
+        <input type="text" name="lastName" placeholder="Surname" required>
+        <input type="text" name="address" placeholder="Address" required>
+        <input type="file" name="file" required>
+        <button type="submit">Send</button>
     </form>
+    <script src="ser.js"></script> <!-- Upewnij się, że masz plik script.js -->
 
 
     <footer>
