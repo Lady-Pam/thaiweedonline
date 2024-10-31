@@ -94,11 +94,21 @@
 
 .checkout-header-right-section {
   text-align: right;
-  width: 150px;
+  width: 50px;
 }
 
 @media (max-width: 1000px) {
   .checkout-header-right-section {
     width: auto;
   }
+}
+.form-icon {
+  height: 18px;;
+}
+
+.form-text {
+  margin-top: 1px;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
 }

@@ -1,9 +1,9 @@
 .header {
     background-color: white;
     color: black;
-    padding-left: 0px;
-    padding-right: 0px;
-
+    /* padding-left: 0px;
+    padding-right: 0px; */
+    padding: 0;
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -23,12 +23,15 @@
 }
 
 .left-section {
+    padding: 0;
     width: 82px;
-    margin-left: 0;
-    /*
+    /* margin-left: 0;
+     */
+     margin: 0;
+    height: 100%;
     display: flex;
     align-items: center;
-*/
+
 }
 
 
@@ -43,9 +46,16 @@
     margin: 0;
     color: black;
     text-align: center;
-    width: 100%;
-    /* flex: 1; */
+    height: 100%;
+    flex: 1;
+    margin-right: 8px;
+    /* display: flex; */
 }
+
+.header-link:hover {
+    background-color: rgb(235, 235, 235);
+    border: 1px solid black;
+  }
 
 .header-title {
     font-family: Roboto, Arial;
@@ -55,6 +65,8 @@
     width: 100%;
     text-align: center;
 }
+
+
 
 
 .thaiweed-logo {
@@ -80,30 +92,43 @@
     .thaiweed-mobile-logo {
       display: block;
       height: 45px;
-      margin-top: 0 px;
+      margin-top: 1 px;
     }
   }
 
 .middle-section {
     flex: 1;
-    margin-left: 5px;
-    margin-right: 5px;
-    /* max-width: 500px; */
-    /* display: flex; */
+    /* margin-left: 1px; */
+    /* margin-right: 1px; */
+    max-width: 180px;
+    display: flex;
     align-items: center;
     text-align: center;
 }
 
 .right-section {
-    width: 80px;
+    width: 124px;
     flex-shrink: 0;
     display: flex;
 
-    margin-right: 3px;
+    /* margin-right: 3px; */
+    margin: 0;
+    padding: 0;
 
     align-items: center;
     justify-content: right;
 
+}
+
+.form-icon {
+    /* height: 18px; */
+    width: 15px;
+}
+
+.form-text {
+    margin-top: 1px;
+    font-size: 14px;
+    font-weight: 700;
 }
 
 .cart-link {
